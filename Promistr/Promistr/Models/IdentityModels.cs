@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Data.Entity;
 using System.Security.Claims;
 using System.Threading.Tasks;
 using System.Web;
@@ -25,6 +27,8 @@ namespace Promistr.Models
         {
             return Task.FromResult(GenerateUserIdentity(manager));
         }
+
+        public virtual ICollection<PromiseComment> PromiseComments { get; set; }
     }
 
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
@@ -34,10 +38,18 @@ namespace Promistr.Models
         {
         }
 
+        DbSet<Promise> Promises { get; set; }
+        DbSet<PromiseStatus> PromiseStatuses { get; set; }
+        DbSet<PromiseComment> PromiseComments { get; set; }
+        DbSet<Category> Categories { get; set; }
+        DbSet<CategoryPromise> CategoryPromises { get; set; }
+
         public static ApplicationDbContext Create()
         {
             return new ApplicationDbContext();
         }
+
+
     }
 }
 
