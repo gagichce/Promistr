@@ -16,6 +16,7 @@ namespace Promistr.Pages
             if (User.Identity.IsAuthenticated && Session[SessionStrings.IsSignedIn] != null)
             {
                 FormsAuthentication.SignOut();
+                Context.GetOwinContext().Authentication.SignOut();
 
                 Session[SessionStrings.IsSignedIn] = null;
 

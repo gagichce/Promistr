@@ -9,7 +9,7 @@
             We are tracking the progress of Prime Minister Justin Trudeau throughout his time in office.
         </p>
         <p>
-            <a class="btn btn-lg btn-danger" role="button">View Promises »</a>
+            <a class="btn btn-lg btn-danger" role="button" href="Promises.aspx">View Promises »</a>
         </p>
     </div>
 </asp:Content>
