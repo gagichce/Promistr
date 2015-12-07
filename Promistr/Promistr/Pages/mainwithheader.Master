@@ -55,6 +55,7 @@
                     </ul>
 
                     <ul class="nav navbar-nav navbar-right">
+                        <asp:Literal ID="addNewButton" runat="server"></asp:Literal>
                         <li class="active"><a href="SignIn.aspx"><%=signInText%></a></li>
                     </ul>
                 </div>

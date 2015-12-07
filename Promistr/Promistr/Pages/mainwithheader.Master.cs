@@ -24,7 +24,11 @@ namespace Promistr.Pages
                 completionPercentage = (totalDone * 100) / totalMade;
             }
             if (HttpContext.Current.User.Identity.IsAuthenticated && Session[SessionStrings.IsSignedIn] != null)
+            {
                 signInText = "Sign-out";
+
+                addNewButton.Text = @"<li ><a href=""AddPromise.aspx"">Add Promise</a></li>";
+            }
         }
     }
 }
