@@ -194,8 +194,14 @@
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="Content\bootstrap-theme.css.map" />
     <Content Include="Content\bootstrap.css.map" />
+    <Content Include="Pages\MakeAccount.aspx" />
+    <Content Include="Pages\Message.aspx" />
+    <Content Include="Pages\Promises.aspx" />
+    <Content Include="Pages\SignIn.aspx" />
+    <Content Include="Pages\ViewPromise.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <None Include="Properties\PublishProfiles\promistr.pubxml" />
     <None Include="Scripts\jquery-2.1.4.intellisense.js" />
     <Content Include="Scripts\jquery-2.1.4.js" />
     <Content Include="Scripts\jquery-2.1.4.min.js" />
@@ -405,7 +411,47 @@
     <Compile Include="Pages\mainwithheader.Master.designer.cs">
       <DependentUpon>mainwithheader.Master</DependentUpon>
     </Compile>
+    <Compile Include="Pages\MakeAccount.aspx.cs">
+      <DependentUpon>MakeAccount.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\MakeAccount.aspx.designer.cs">
+      <DependentUpon>MakeAccount.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Message.aspx.cs">
+      <DependentUpon>Message.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Message.aspx.designer.cs">
+      <DependentUpon>Message.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Promises.aspx.cs">
+      <DependentUpon>Promises.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Promises.aspx.designer.cs">
+      <DependentUpon>Promises.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\SignIn.aspx.cs">
+      <DependentUpon>SignIn.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\SignIn.aspx.designer.cs">
+      <DependentUpon>SignIn.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\ViewPromise.aspx.cs">
+      <DependentUpon>ViewPromise.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\ViewPromise.aspx.designer.cs">
+      <DependentUpon>ViewPromise.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SessionStrings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SessionStrings.resx</DependentUpon>
+    </Compile>
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -436,6 +482,10 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201512062046419_Initial.resx">
       <DependentUpon>201512062046419_Initial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SessionStrings.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>SessionStrings.Designer.cs</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

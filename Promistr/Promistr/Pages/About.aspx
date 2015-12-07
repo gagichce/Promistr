@@ -6,7 +6,7 @@
         <h1>About us</h1>
         <p>We are a group of students from McMaster University interested in keeping politicians honest. If someone says they are going to do something they should do it.</p>
         <p>
-            <a class="btn btn-lg btn-primary" role="button">View Promises</a>
+            <a class="btn btn-lg btn-danger" role="button">View Promises »</a>
         </p>
     </div>
 </asp:Content>
