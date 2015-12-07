@@ -38,11 +38,11 @@ namespace Promistr.Models
         {
         }
 
-        DbSet<Promise> Promises { get; set; }
-        DbSet<PromiseStatus> PromiseStatuses { get; set; }
-        DbSet<PromiseComment> PromiseComments { get; set; }
-        DbSet<Category> Categories { get; set; }
-        DbSet<CategoryPromise> CategoryPromises { get; set; }
+        public DbSet<Promise> Promises { get; set; }
+        public DbSet<PromiseStatus> PromiseStatuses { get; set; }
+        public DbSet<PromiseComment> PromiseComments { get; set; }
+        public DbSet<Category> Categories { get; set; }
+        public DbSet<CategoryPromise> CategoryPromises { get; set; }
 
         public static ApplicationDbContext Create()
         {
